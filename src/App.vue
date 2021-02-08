@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <top-header class="mb-30" />
+    <top-header />
     <div class="wrapper">
       <router-view />
     </div>

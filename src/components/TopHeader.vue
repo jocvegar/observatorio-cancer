@@ -93,6 +93,7 @@
                 >
                   <ul
                     id="nav"
+                    @click="linkToggler()"
                     class="navbar-nav ml-auto d-flex align-items-center"
                   >
                     <li class="nav-item">
@@ -185,12 +186,13 @@ export default {
     navbarToggle() {
       let navbarToggle = document.querySelector(".navbar-toggler");
       let navbarCollapse = document.querySelector(".navbar-collapse");
-
       navbarCollapse.classList.toggle("show");
       navbarToggle.classList.toggle("active");
     },
     linkToggler() {
+      let navbarToggle = document.querySelector(".navbar-toggler");
       let navbarCollapse = document.querySelector(".navbar-collapse");
+      navbarToggle.classList.remove("active");
       navbarCollapse.classList.remove("show");
     },
   },
