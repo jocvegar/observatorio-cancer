@@ -97,75 +97,108 @@
                     class="navbar-nav ml-auto d-flex align-items-center"
                   >
                     <li class="nav-item">
-                      <router-link to="/">
+                      <router-link to="/" class="stretched-link">
                         Inicio
                       </router-link>
                     </li>
                     <b-nav-item-dropdown text="Observatorio" right>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/observatorio/acerca">
+                        <router-link
+                          to="/observatorio/acerca"
+                          class="stretched-link"
+                        >
                           ¿Quienes Somos?
                         </router-link>
                       </b-dropdown-item>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/observatorio/mision_vision">
+                        <router-link
+                          to="/observatorio/mision_vision"
+                          class="stretched-link"
+                        >
                           Misión y Visión
                         </router-link>
                       </b-dropdown-item>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/observatorio/modelo">
+                        <router-link
+                          to="/observatorio/modelo"
+                          class="stretched-link"
+                        >
                           Modelo de Intervención
                         </router-link>
                       </b-dropdown-item>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/observatorio/fundacion">
+                        <router-link
+                          to="/observatorio/fundacion"
+                          class="stretched-link"
+                        >
                           FHPENCC
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item-dropdown text="Cáncer en Cifras" right>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/cancer_en_cifras/datos">
+                        <router-link
+                          to="/cancer_en_cifras/datos"
+                          class="stretched-link"
+                        >
                           Datos sobre Cáncer
                         </router-link>
                       </b-dropdown-item>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/cancer_en_cifras/indicadores">
+                        <router-link
+                          to="/cancer_en_cifras/indicadores"
+                          class="stretched-link"
+                        >
                           Datos e Indicadores
                         </router-link>
                       </b-dropdown-item>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/cancer_en_cifras/herramientas">
+                        <router-link
+                          to="/cancer_en_cifras/herramientas"
+                          class="stretched-link"
+                        >
                           Herramientas de Consulta
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item-dropdown text="Publicaciones" right>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/publicaciones/informes">
+                        <router-link
+                          to="/publicaciones/informes"
+                          class="stretched-link"
+                        >
                           Informes
                         </router-link>
                       </b-dropdown-item>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/publicaciones/boletines">
+                        <router-link
+                          to="/publicaciones/boletines"
+                          class="stretched-link"
+                        >
                           Boletines
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item-dropdown text="Recursos" right>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/recursos/infografias">
+                        <router-link
+                          to="/recursos/infografias"
+                          class="stretched-link"
+                        >
                           Infografías
                         </router-link>
                       </b-dropdown-item>
                       <b-dropdown-item class="px-3">
-                        <router-link to="/recursos/videos">
+                        <router-link
+                          to="/recursos/videos"
+                          class="stretched-link"
+                        >
                           Videos
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item>
-                      <router-link to="/contacto">
+                      <router-link to="/contacto" class="stretched-link">
                         Contacto
                       </router-link>
                     </b-nav-item>

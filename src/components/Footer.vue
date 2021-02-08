@@ -54,7 +54,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-3 col-md-6">
+          <div class="col-xl-4 col-lg-6 col-md-6">
             <div class="footer-widget mb-30">
               <h4>Navegación</h4>
               <ul class="footer-links">
@@ -64,15 +64,102 @@
                   </router-link>
                 </li>
                 <li>
-                  <router-link to="/about">
-                    Acerca
+                  <div v-b-toggle.observatorio class="d-inline-flex my-2">
+                    Observatorio
+                    <i class="fas fa-sort-down ml-2 mt-n1"></i>
+                  </div>
+                  <b-collapse id="observatorio" class="mt-2">
+                    <li>
+                      <router-link to="/observatorio/acerca">
+                        ¿Quiénes Somos?
+                      </router-link>
+                    </li>
+                    <li>
+                      <router-link to="/observatorio/mision_vision">
+                        Misión y Visión
+                      </router-link>
+                    </li>
+                    <li>
+                      <router-link to="/observatorio/modelo">
+                        Modelo de Intervención
+                      </router-link>
+                    </li>
+                    <li>
+                      <router-link to="/observatorio/fundacion">
+                        FHPENCC
+                      </router-link>
+                    </li>
+                  </b-collapse>
+                </li>
+
+                <li>
+                  <div v-b-toggle.cancer-en-cifras class="d-inline-flex my-2">
+                    Cáncer en Cifras
+                    <i class="fas fa-sort-down ml-2 mt-n1"></i>
+                  </div>
+                  <b-collapse id="cancer-en-cifras" class="mt-2">
+                    <li>
+                      <router-link to="/cancer_en_cifras/datos">
+                        Datos sobre Cáncer
+                      </router-link>
+                    </li>
+                    <li>
+                      <router-link to="/cancer_en_cifras/indicadores">
+                        Datos e Indicadores
+                      </router-link>
+                    </li>
+                    <li>
+                      <router-link to="/cancer_en_cifras/herramientas">
+                        Herramientas de Consulta
+                      </router-link>
+                    </li>
+                  </b-collapse>
+                </li>
+                <li>
+                  <div v-b-toggle.publicaciones class="d-inline-flex my-2">
+                    Publicaciones
+                    <i class="fas fa-sort-down ml-2 mt-n1"></i>
+                  </div>
+                  <b-collapse id="publicaciones" class="mt-2">
+                    <li>
+                      <router-link to="/publicaciones/informes">
+                        Informes
+                      </router-link>
+                    </li>
+                    <li>
+                      <router-link to="/publicaciones/boletines">
+                        Boletines
+                      </router-link>
+                    </li>
+                  </b-collapse>
+                </li>
+                <li>
+                  <div v-b-toggle.recursos class="d-inline-flex my-2">
+                    Recursos
+                    <i class="fas fa-sort-down ml-2 mt-n1"></i>
+                  </div>
+                  <b-collapse id="recursos" class="mt-2">
+                    <li>
+                      <router-link to="/recursos/infografias">
+                        Infografías
+                      </router-link>
+                    </li>
+                    <li>
+                      <router-link to="/recursos/videos">
+                        Videos
+                      </router-link>
+                    </li>
+                  </b-collapse>
+                </li>
+                <li>
+                  <router-link to="/contacto">
+                    Contacto
                   </router-link>
                 </li>
-                <li><a href="#">Donar</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-3 col-md-5">
+          <!-- <div class="col-xl-2 col-lg-3 col-md-5">
             <div class="footer-widget mb-30">
               <h4>Maneras de Ayudar</h4>
               <ul class="footer-links">
@@ -83,7 +170,7 @@
                 <li><a href="#">Orthopedics</a></li>
               </ul>
             </div>
-          </div>
+          </div> -->
           <div class="col-xl-4 col-lg-12 col-md-7">
             <div class="footer-widget mb-30">
               <h4>Ubicación</h4>

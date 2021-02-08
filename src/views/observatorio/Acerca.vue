@@ -12,9 +12,9 @@
             <div class="general-content  mb-55">
               <div class="section-title mb-30">
                 <h2 class="mb-15 text-center">
-                  ¿Quienes <span class="alejandro">Somos</span>?
+                  ¿Quiénes <span class="alejandro">Somos</span>?
                 </h2>
-                <p data-aos="fade-up" class="my-5 text-center text-md-left">
+                <p class="my-5 text-center text-md-left">
                   El Observatorio Nacional de Cáncer Infantil es una instancia
                   técnica responsable de registrar, monitorear, almacenar,
                   procesar, sistematizar, analizar y visibilizar la información
@@ -25,7 +25,7 @@
                   de los pacientes oncológico-pediátricos.
                 </p>
                 <p
-                  data-aos="fade-up"
+                  data-aos="fade-down"
                   data-aos-delay="300"
                   class="my-5 text-center text-md-left"
                 >
