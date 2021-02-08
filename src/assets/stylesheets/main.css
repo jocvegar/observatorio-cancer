@@ -246,6 +246,13 @@ p {
   box-shadow: 0 10px 25px rgba(145, 8, 8, 0.3);
 }
 
+@media (max-width: 767px) {
+  .theme-btn {
+    padding: 15px 35px;
+    font-size: 15px;
+  }
+}
+
 .scroll-top {
   width: 45px;
   height: 45px;
@@ -316,13 +323,20 @@ p {
 
 /*===== All Section Title Style =====*/
 .section-title span {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 25px;
   font-weight: 600;
   display: block;
   color: #c70a0b;
   margin-bottom: 15px;
 }
+
+.section-title h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
 .section-title .alejandro {
   font-weight: 800;
   color: #c70a0b;
@@ -1341,7 +1355,6 @@ p {
 .header-top ul li a {
   color: #fff;
   font-size: 14px;
-  font-weight: 500;
 }
 
 .header-top ul li a i {
@@ -1358,24 +1371,6 @@ p {
 }
 
 .header-top ul li a i:hover {
-  background: #fff;
-  color: #c70a0b;
-}
-
-.header-top ul li a svg {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  line-height: 30px;
-  text-align: center;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-
-.header-top ul li a svg:hover {
   background: #fff;
   color: #c70a0b;
 }
@@ -1443,10 +1438,23 @@ p {
   max-width: 150px;
 }
 
+.navbar-title {
+  text-decoration: none;
+  color: #c70a0b;
+  font-size: 30px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-title {
+    font-size: 20px;
+  }
+}
+
 .navbar-toggler {
   padding: 0;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
 }
 
 .navbar-toggler .toggler-icon {
@@ -1488,8 +1496,6 @@ p {
     /*box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);*/
     padding: 5px 12px;
     margin: 1em 0;
-    -webkit-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
   }
 }
 
@@ -1505,8 +1511,6 @@ p {
     /*box-shadow: 0px 15px 20px 0px rgba(57, 62, 70, 0.1);*/
     padding: 5px 12px;
     margin: 1em 0;
-    -webkit-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
   }
 }
 
@@ -1540,9 +1544,9 @@ p {
 
 .navbar-nav .nav-item a {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   color: #393e46;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   position: relative;
@@ -1708,6 +1712,13 @@ p {
   background-image: linear-gradient(to right, #C70A0B 0%, rgba(0, 173, 181, 0.11) 50%, rgba(255, 255, 255, 0) 100%);*/
 }
 
+@media (max-width: 991.98px) {
+  .slider-section .single-slider {
+    max-height: 20em;
+    height: 20em;
+  }
+}
+
 .slider-section .single-slider .slider-content {
   padding: 140px 0 200px;
 }
@@ -1721,12 +1732,14 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-section .single-slider .slider-content {
     padding: 110px 0px;
+    /* max-height: 40em;
+    height: 40em;*/
   }
 }
 
 @media (max-width: 767px) {
   .slider-section .single-slider .slider-content {
-    padding: 90px 0px;
+    padding: 40px 0px;
   }
 }
 
@@ -1754,8 +1767,8 @@ p {
 
 @media (max-width: 767px) {
   .slider-section .single-slider .slider-content h1 {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 
@@ -1772,8 +1785,8 @@ p {
 }
 
 .slider-section .single-slider .slider-content .theme-btn {
-  background: #fff;
-  color: #c70a0b;
+  background: #c70a0b;
+  color: #fff;
 }
 
 .slider-section .single-slider .slider-content .theme-btn:hover {
@@ -1818,6 +1831,29 @@ p {
   background-color: #ebebeb;
 }
 
+.quienes-somos-section {
+  position: relative;
+}
+
+.quienes-somos-section .shape {
+  left: -100px;
+}
+
+.quienes-somos-section .quienes-somos-item {
+  text-align: center;
+}
+
+.quienes-somos-section .quienes-somos-item .quienes-somos-icon {
+  width: 120px;
+  height: 120px;
+  line-height: 83px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: #ebebeb;
+}
+
 /*===========================
     About css
 ===========================*/
@@ -1837,26 +1873,6 @@ p {
 
 @media (max-width: 767px) {
   .about-section .about-content p {
-    padding: 0;
-  }
-}
-
-.general {
-  position: relative;
-  overflow: hidden;
-}
-
-.general .shape {
-  right: -50px;
-  top: 200px;
-}
-
-.general .general-content p {
-  padding: 0 15px;
-}
-
-@media (max-width: 767px) {
-  .general .general-content p {
     padding: 0;
   }
 }
