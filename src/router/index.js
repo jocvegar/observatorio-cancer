@@ -1,29 +1,81 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
+    path: "/contacto",
+    name: "Contacto",
+    component: () => import("../views/Contacto.vue"),
+  },
+  {
+    path: "/observatorio/acerca",
+    name: "Acerca",
+    component: () => import("../views/observatorio/Acerca.vue"),
+  },
+  {
+    path: "/observatorio/mision_vision",
+    name: "MisionVision",
+    component: () => import("../views/observatorio/MisionVision.vue"),
+  },
+  {
+    path: "/observatorio/modelo",
+    name: "Modelo",
+    component: () => import("../views/observatorio/Modelo.vue"),
+  },
+  {
+    path: "/observatorio/fundacion",
+    name: "Fundacion",
+    component: () => import("../views/observatorio/Fundacion.vue"),
+  },
+  {
+    path: "/cancer_en_cifras/datos",
+    name: "Datos",
+    component: () => import("../views/cancer_en_cifras/Datos.vue"),
+  },
+  {
+    path: "/cancer_en_cifras/indicadores",
+    name: "Indicadores",
+    component: () => import("../views/cancer_en_cifras/Indicadores.vue"),
+  },
+  {
+    path: "/cancer_en_cifras/herramientas",
+    name: "Herramientas",
+    component: () => import("../views/cancer_en_cifras/Herramientas.vue"),
+  },
+  {
+    path: "/publicaciones/informes",
+    name: "Informes",
+    component: () => import("../views/publicaciones/Informes.vue"),
+  },
+  {
+    path: "/publicaciones/boletines",
+    name: "Boletines",
+    component: () => import("../views/publicaciones/Boletines.vue"),
+  },
+  {
+    path: "/recursos/infografias",
+    name: "Infografias",
+    component: () => import("../views/recursos/Infografias.vue"),
+  },
+  {
+    path: "/recursos/videos",
+    name: "Videos",
+    component: () => import("../views/recursos/Videos.vue"),
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

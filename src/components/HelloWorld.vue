@@ -20,8 +20,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-.hello {
-  height: 100vh;
-}
-</style>
+<style lang="scss" scoped></style>

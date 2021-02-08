@@ -80,6 +80,7 @@
                   aria-controls="navbarSupportedContent"
                   aria-expanded="false"
                   aria-label="Toggle navigation"
+                  @click="navbarToggle()"
                 >
                   <span class="toggler-icon"></span>
                   <span class="toggler-icon"></span>
@@ -99,20 +100,74 @@
                         Inicio
                       </router-link>
                     </li>
-                    <li class="nav-item">
-                      <router-link to="/about">
-                        Acerca
+                    <b-nav-item-dropdown text="Observatorio" right>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/observatorio/acerca">
+                          ¿Quienes Somos?
+                        </router-link>
+                      </b-dropdown-item>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/observatorio/mision_vision">
+                          Misión y Visión
+                        </router-link>
+                      </b-dropdown-item>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/observatorio/modelo">
+                          Modelo de Intervención
+                        </router-link>
+                      </b-dropdown-item>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/observatorio/fundacion">
+                          FHPENCC
+                        </router-link>
+                      </b-dropdown-item>
+                    </b-nav-item-dropdown>
+                    <b-nav-item-dropdown text="Cáncer en Cifras" right>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/cancer_en_cifras/datos">
+                          Datos sobre Cáncer
+                        </router-link>
+                      </b-dropdown-item>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/cancer_en_cifras/indicadores">
+                          Datos e Indicadores
+                        </router-link>
+                      </b-dropdown-item>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/cancer_en_cifras/herramientas">
+                          Herramientas de Consulta
+                        </router-link>
+                      </b-dropdown-item>
+                    </b-nav-item-dropdown>
+                    <b-nav-item-dropdown text="Publicaciones" right>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/publicaciones/informes">
+                          Informes
+                        </router-link>
+                      </b-dropdown-item>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/publicaciones/boletines">
+                          Boletines
+                        </router-link>
+                      </b-dropdown-item>
+                    </b-nav-item-dropdown>
+                    <b-nav-item-dropdown text="Recursos" right>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/recursos/infografias">
+                          Infografías
+                        </router-link>
+                      </b-dropdown-item>
+                      <b-dropdown-item class="px-3">
+                        <router-link to="/recursos/videos">
+                          Videos
+                        </router-link>
+                      </b-dropdown-item>
+                    </b-nav-item-dropdown>
+                    <b-nav-item>
+                      <router-link to="/contacto">
+                        Contacto
                       </router-link>
-                    </li>
-
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        class="btn btn-danger navigation-links text-white px-3 px-md-2"
-                      >
-                        Donar
-                      </a>
-                    </li>
+                    </b-nav-item>
                   </ul>
                 </div>
               </nav>
@@ -125,7 +180,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    navbarToggle() {
+      let navbarToggle = document.querySelector(".navbar-toggler");
+      let navbarCollapse = document.querySelector(".navbar-collapse");
+
+      navbarCollapse.classList.toggle("show");
+      navbarToggle.classList.toggle("active");
+    },
+    linkToggler() {
+      let navbarCollapse = document.querySelector(".navbar-collapse");
+      navbarCollapse.classList.remove("show");
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

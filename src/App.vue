@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <top-header />
-    <router-view />
+    <top-header class="mb-30" />
+    <div class="wrapper">
+      <router-view />
+    </div>
     <Footer />
   </div>
 </template>
@@ -25,5 +27,8 @@ export default {
   text-align: center;
   color: #8c96a7;
   overflow-x: hidden;
+}
+.wrapper {
+  min-height: 80vh;
 }
 </style>
