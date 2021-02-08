@@ -323,6 +323,12 @@ p {
   color: #c70a0b;
   margin-bottom: 15px;
 }
+.section-title .alejandro {
+  font-weight: 800;
+  color: #c70a0b;
+  display: inline-block;
+  font-size: 45px;
+}
 
 /*===== All Preloader Style =====*/
 .preloader {

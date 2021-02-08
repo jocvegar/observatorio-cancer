@@ -11,11 +11,15 @@
 <script>
 import TopHeader from "@/components/TopHeader.vue";
 import Footer from "@/components/Footer.vue";
+import AOS from "aos";
 
 export default {
   components: {
     TopHeader,
     Footer,
+  },
+  created() {
+    AOS.init({ once: true });
   },
 };
 </script>
