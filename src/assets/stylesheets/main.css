@@ -2538,3 +2538,9 @@ h3 {
 .footer .copyright-area a:hover {
   color: #c70a0b;
 }
+
+.form-group label {
+  float: left;
+  font-size: 20px;
+  font-weight: 500;
+}
