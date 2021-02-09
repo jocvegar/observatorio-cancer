@@ -7,6 +7,15 @@
     </b-overlay>
     <section class="general-section pt-60" v-if="!loading">
       <div class="container-fluid">
+        <b-alert
+          :show="dismissCountDown"
+          dismissible
+          :variant="alertType"
+          @dismissed="dismissCountDown = 0"
+          @dismiss-count-down="countDownChanged"
+        >
+          {{ alertText }}
+        </b-alert>
         <div class="row">
           <div class="col-xl-10 col-lg-11 mx-auto">
             <div class="general-content mb-55">
@@ -80,6 +89,7 @@
 </template>
 
 <script>
+import { messagesCollection, firebase } from "@/firebaseConfig";
 import Lottie from "@/components/lottie.vue";
 import lottieSettings from "@/mixins/lottieMixin";
 import { validationMixin } from "vuelidate";
@@ -94,6 +104,10 @@ export default {
   data() {
     return {
       loading: true,
+      dismissSecs: 5,
+      dismissCountDown: 0,
+      alertText: "",
+      alertType: "success",
       form: {
         name: "",
         email: "",
@@ -127,7 +141,38 @@ export default {
     onSubmit() {
       this.$v.$touch();
       if (this.$v.form.$invalid) return;
-      console.log("pase :>>");
+      this.submit();
+    },
+    submit() {
+      this.form.createdAt = firebase.firestore.FieldValue.serverTimestamp();
+      messagesCollection
+        .add(this.form)
+        .then(() => {
+          this.showAlert("success");
+          this.alertText = "Muchas gracias! Pronto te responderemos.";
+          this.clearData();
+        })
+        .catch((err) => {
+          console.log("Error :>> ", err);
+          this.alertText = `Ocurrió un error inesperado, inténtelo nuevamente, ${err}`;
+          this.showAlert("error");
+        });
+    },
+    clearData() {
+      this.form.name = "";
+      this.form.email = "";
+      this.form.message = "";
+      this.$nextTick(() => {
+        this.$v.$reset();
+      });
+    },
+    showAlert(type) {
+      this.scrollToTop();
+      this.dismissCountDown = this.dismissSecs;
+      this.alertType = type;
+    },
+    scrollToTop() {
+      window.scrollTo(0, 0);
     },
   },
   computed: {

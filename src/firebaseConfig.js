@@ -1,5 +1,5 @@
 import { firebase } from "@firebase/app";
-// import "@firebase/auth";
+import "@firebase/analytics";
 import "@firebase/firestore";
 
 const config = require("../config");
@@ -19,7 +19,8 @@ firebase.analytics();
 
 // firebase utils
 const db = firebase.firestore();
-const auth = firebase.auth();
-const currentUser = auth.currentUser;
+// const auth = firebase.auth();
+// const currentUser = auth.currentUser;
+const messagesCollection = db.collection("messages");
 
-export { db, auth, firebase, currentUser };
+export { db, firebase, messagesCollection };
