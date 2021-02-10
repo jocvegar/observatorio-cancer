@@ -29,9 +29,9 @@ exports.sendEmail = functions.firestore
       subject: "Mensaje de Observatorio",
       text: `nombre: ${name}, email: ${email}, message: ${message}`,
       html: `<h4>Nuevo mensaje</h4>
-            <p style="font-size: 16px;">${name}</p>
-            <p style="font-size: 12px;">${email}</p>
-            <p style="font-size: 12px;">${message}</p>
+            <p style="font-size: 16px;">nombre: ${name}</p>
+            <p style="font-size: 12px;">corre: ${email}</p>
+            <p style="font-size: 12px;">mensaje: ${message}</p>
             `,
     };
 
