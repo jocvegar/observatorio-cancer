@@ -12,8 +12,8 @@
             <div class="general-content  mb-55">
               <div class="section-title mb-30">
                 <h2 class="mb-15 text-center">
-                  Fundación Hondureña para
-                  <span class="alejandro">el Niño con Cáncer</span>
+                  Fundación Hondureña para el
+                  <span class="alejandro">Niño con Cáncer</span>
                 </h2>
                 <p class="my-5 text-center text-md-left">
                   La Fundación Hondureña para el Niño Con Cáncer es una
