@@ -1,4 +1,5 @@
 const functions = require("firebase-functions");
+const admin = require("firebase-admin");
 const nodemailer = require("nodemailer");
 const gmailEmail = functions.config().gmail.login;
 const gmailPassword = functions.config().gmail.pass;
@@ -23,9 +24,9 @@ exports.sendEmail = functions.firestore
     });
 
     const mailOptions = {
-      from: "josevegaraquel@gmail.com",
+      from: "salva.mi.vida.honduras.web@gmail.com",
       to: "jocvegar@gmail.com",
-      subject: "Hit from HEKA HND",
+      subject: "Mensaje de Observatorio",
       text: `nombre: ${name}, email: ${email}, message: ${message}`,
       html: `<h4>Nuevo mensaje</h4>
             <p style="font-size: 16px;">${name}</p>
