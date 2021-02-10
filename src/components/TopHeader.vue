@@ -135,7 +135,7 @@
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
-                    <b-nav-item-dropdown text="Cáncer en Cifras" right>
+                    <b-nav-item-dropdown disabled text="Cáncer en Cifras" right>
                       <b-dropdown-item class="px-3">
                         <router-link
                           to="/cancer_en_cifras/datos"
@@ -161,7 +161,7 @@
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
-                    <b-nav-item-dropdown text="Publicaciones" right>
+                    <b-nav-item-dropdown disabled text="Publicaciones" right>
                       <b-dropdown-item class="px-3">
                         <router-link
                           to="/publicaciones/informes"
@@ -179,7 +179,7 @@
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
-                    <b-nav-item-dropdown text="Recursos" right>
+                    <b-nav-item-dropdown disabled text="Recursos" right>
                       <b-dropdown-item class="px-3">
                         <router-link
                           to="/recursos/infografias"
