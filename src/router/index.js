@@ -70,6 +70,11 @@ const routes = [
     name: "Videos",
     component: () => import("../views/recursos/Videos.vue"),
   },
+  {
+    path: "/mensaje-presidente",
+    name: "Mensaje",
+    component: () => import("../views/Mensaje.vue"),
+  },
 ];
 
 const router = new VueRouter({
