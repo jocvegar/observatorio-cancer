@@ -9,7 +9,7 @@
               <div class="section-title mb-30">
                 <h2 class="mb-15 text-center">
                   Mensaje de la
-                  <span class="alejandro">Presidente</span>
+                  <span class="alejandro">Presidenta</span>
                 </h2>
               </div>
             </div>
