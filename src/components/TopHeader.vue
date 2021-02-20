@@ -8,14 +8,17 @@
               <div class="header-top-left text-center text-md-left">
                 <ul>
                   <li>
-                    <a href="https://api.whatsapp.com/send?phone=+50494583244">
+                    <a href="https://api.whatsapp.com/send?phone=+50494369781">
                       <i class="fas fa-phone-alt fa-lg"></i>
-                      9458-3244
+                      9436-9781
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:info@salvamivida.org">
-                      <i class="far fa-envelope fa-lg"></i>info@salvamivida.org
+                    <a
+                      href="mailto:observatoriohondurenocancerinfantil@salvamivida.org"
+                    >
+                      <i class="far fa-envelope fa-lg"></i
+                      >observatoriohondurenocancerinfantil@salvamivida.org
                     </a>
                   </li>
                 </ul>
@@ -71,6 +74,12 @@
                     alt="FHPENCC"
                     style="width:auto;height: 5rem;"
                   />
+                  <img
+                    class="navbar-brand-dark ml-3"
+                    src="@/assets/logo.jpg"
+                    alt="FHPENCC"
+                    style="width:auto;height: 5rem;"
+                  />
                 </a>
                 <button
                   class="navbar-toggler"
@@ -101,7 +110,15 @@
                         Inicio
                       </router-link>
                     </li>
-                    <b-nav-item-dropdown text="Observatorio" right>
+
+                    <b-nav-item-dropdown
+                      text="Observatorio"
+                      right
+                      :toggle-class="
+                        subIsActive('/observatorio') ? 'active' : ''
+                      "
+                      toggle="hola()"
+                    >
                       <b-dropdown-item class="px-3">
                         <router-link
                           to="/observatorio/acerca"
@@ -135,6 +152,7 @@
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
+
                     <b-nav-item-dropdown disabled text="Cáncer en Cifras" right>
                       <b-dropdown-item class="px-3">
                         <router-link
@@ -227,6 +245,12 @@ export default {
       let navbarCollapse = document.querySelector(".navbar-collapse");
       navbarToggle.classList.remove("active");
       navbarCollapse.classList.remove("show");
+    },
+    subIsActive(input) {
+      const paths = Array.isArray(input) ? input : [input];
+      return paths.some((path) => {
+        return this.$route.path.indexOf(path) === 0; // current path starts with this path string
+      });
     },
   },
 };
