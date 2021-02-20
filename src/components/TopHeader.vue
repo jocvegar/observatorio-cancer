@@ -70,13 +70,13 @@
                 <a class="navbar-brand" href="/">
                   <img
                     class="navbar-brand-dark"
-                    src="@/assets/logo.jpg"
+                    src="@/assets/logo_fundacion.jpg"
                     alt="FHPENCC"
                     style="width:auto;height: 5rem;"
                   />
                   <img
                     class="navbar-brand-dark ml-3"
-                    src="@/assets/logo.jpg"
+                    src="@/assets/logo_observatorio.jpg"
                     alt="FHPENCC"
                     style="width:auto;height: 5rem;"
                   />
@@ -117,9 +117,8 @@
                       :toggle-class="
                         subIsActive('/observatorio') ? 'active' : ''
                       "
-                      toggle="hola()"
                     >
-                      <b-dropdown-item class="px-3">
+                      <b-dropdown-item class="px-3" to="/observatorio/acerca">
                         <router-link
                           to="/observatorio/acerca"
                           class="stretched-link"
@@ -127,7 +126,10 @@
                           ¿Quienes Somos?
                         </router-link>
                       </b-dropdown-item>
-                      <b-dropdown-item class="px-3">
+                      <b-dropdown-item
+                        class="px-3"
+                        to="/observatorio/mision_vision"
+                      >
                         <router-link
                           to="/observatorio/mision_vision"
                           class="stretched-link"
@@ -135,7 +137,7 @@
                           Misión y Visión
                         </router-link>
                       </b-dropdown-item>
-                      <b-dropdown-item class="px-3">
+                      <b-dropdown-item class="px-3" to="/observatorio/modelo">
                         <router-link
                           to="/observatorio/modelo"
                           class="stretched-link"
@@ -143,17 +145,27 @@
                           Modelo de Intervención
                         </router-link>
                       </b-dropdown-item>
-                      <b-dropdown-item class="px-3">
+                      <b-dropdown-item
+                        class="px-3"
+                        to="/observatorio/fundacion"
+                      >
                         <router-link
                           to="/observatorio/fundacion"
-                          class="stretched-link"
+                          class="text-wrap"
                         >
-                          FHPENCC
+                          Fundación Hondureña Para El Niño Con Cáncer
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
 
-                    <b-nav-item-dropdown disabled text="Cáncer en Cifras" right>
+                    <b-nav-item-dropdown
+                      text="Cáncer en Cifras"
+                      right
+                      disabled
+                      :toggle-class="
+                        subIsActive('/cancer_en_cifras') ? 'active' : ''
+                      "
+                    >
                       <b-dropdown-item class="px-3">
                         <router-link
                           to="/cancer_en_cifras/datos"
@@ -179,7 +191,14 @@
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
-                    <b-nav-item-dropdown disabled text="Publicaciones" right>
+                    <b-nav-item-dropdown
+                      disabled
+                      text="Publicaciones"
+                      right
+                      :toggle-class="
+                        subIsActive('/publicaciones') ? 'active' : ''
+                      "
+                    >
                       <b-dropdown-item class="px-3">
                         <router-link
                           to="/publicaciones/informes"
@@ -197,7 +216,12 @@
                         </router-link>
                       </b-dropdown-item>
                     </b-nav-item-dropdown>
-                    <b-nav-item-dropdown disabled text="Recursos" right>
+                    <b-nav-item-dropdown
+                      disabled
+                      text="Recursos"
+                      right
+                      :toggle-class="subIsActive('/recursos') ? 'active' : ''"
+                    >
                       <b-dropdown-item class="px-3">
                         <router-link
                           to="/recursos/infografias"

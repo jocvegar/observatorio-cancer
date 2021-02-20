@@ -1696,8 +1696,8 @@ h3 {
 .slider-section .single-slider {
   position: relative;
   z-index: 1;
-  max-height: 40em;
-  height: 40em;
+  max-height: 30em;
+  height: 30em;
 }
 
 .slider-section .single-slider::after {

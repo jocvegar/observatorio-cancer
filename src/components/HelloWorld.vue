@@ -35,8 +35,13 @@
           </div>
         </section>
       </div>
-      <section class="bg-light pb-20 pt-20">
+      <section class="bg-white pb-20 pt-20">
         <b-container>
+          <div class="section-title mb-30 mt-100">
+            <h4 class="mb-15 text-center">
+              Durante el 2020
+            </h4>
+          </div>
           <b-row>
             <b-col cols="12" md="4">
               <b-img :src="require('@/assets/icons_1.png')"></b-img>
@@ -51,54 +56,66 @@
         </b-container>
       </section>
 
-      <b-container fluid>
-        <div class="row">
-          <div class="col-xl-10 col-lg-11 mx-auto">
-            <div class="general-content mb-55 mt-55">
-              <div class="section-title mb-30">
-                <h4 class="mb-15 text-center">
-                  Mensaje de la Presidente
-                </h4>
-              </div>
+      <div class="row bg-light">
+        <div class="col-xl-10 col-lg-11 mx-auto">
+          <div class="general-content mb-100 mt-100">
+            <b-row align-v="center">
+              <b-col cols="12" md="6">
+                <b-img
+                  thumbnail
+                  fluid
+                  :src="require('@/assets/presidente.jpg')"
+                  alt="mensaje presidente"
+                  style="max-height: 20em;width: auto;"
+                ></b-img>
+              </b-col>
 
-              <b-row>
-                <b-col>
-                  <b-img
-                    thumbnail
-                    fluid
-                    :src="require('@/assets/presidente.jpg')"
-                    alt="mensaje presidente"
-                    style="max-height: 20em;width: auto;"
-                  ></b-img>
-                </b-col>
-              </b-row>
+              <b-col cols="12" md="6">
+                <div class="section-title">
+                  <h4 class="mb-15 text-center text-primary">
+                    Mensaje de la Presidenta
+                  </h4>
+                </div>
 
-              <b-row>
-                <b-col>
-                  <p
-                    data-aos="fade-down"
-                    data-aos-delay="300"
-                    class="my-5 text-center text-md-left"
-                  >
-                    La información es un activo invaluable para cuantificar,
-                    evaluar y mejorar la atención ofrecida a los niños y niñas
-                    con cáncer infantil de Honduras. Los esfuerzos y alianzas
-                    interinstitucionales nos permiten fortalecer cada vez más
-                    los sistemas de registro, monitoreo y análisis de
-                    información sobre cáncer pediátrico, generando así evidencia
-                    certera para orientar la toma de decisiones e impulsar
-                    políticas públicas en favor de los pacientes
-                    oncológico-pediátricos.
-                  </p>
-                  <b-button variant="primary" @click.prevent="toGoMessage()">
-                    Continuar Leyendo
-                    <i class="fas fa-share ml-2 mt-n1"></i>
-                  </b-button>
-                </b-col>
-              </b-row>
-            </div>
+                <p
+                  data-aos="fade-down"
+                  data-aos-delay="300"
+                  class="my-5 text-center text-md-left"
+                >
+                  La información es un activo invaluable para cuantificar,
+                  evaluar y mejorar la atención ofrecida a los niños y niñas con
+                  cáncer infantil de Honduras. Los esfuerzos y alianzas
+                  interinstitucionales nos permiten fortalecer cada vez más los
+                  sistemas de registro, monitoreo y análisis de información
+                  sobre cáncer pediátrico, generando así evidencia certera para
+                  orientar la toma de decisiones e impulsar políticas públicas
+                  en favor de los pacientes oncológico-pediátricos.
+                </p>
+                <b-button variant="primary" @click.prevent="toGoMessage()">
+                  Continuar Leyendo
+                  <i class="fas fa-share ml-2 mt-n1"></i>
+                </b-button>
+              </b-col>
+            </b-row>
           </div>
         </div>
+      </div>
+      <!-- </b-container> -->
+      <b-container>
+        <section class="general-section pt-60">
+          <div class="row">
+            <div class="col-xl-10 col-lg-11 mx-auto">
+              <div class="general-content mb-55">
+                <div class="section-title mb-30">
+                  <h2 class="mb-15 text-center">
+                    Últimas
+                    <span class="alejandro">Noticias</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </b-container>
     </section>
   </div>
@@ -117,7 +134,7 @@ export default {
     return {
       loading: true,
       cssProps: {
-        backgroundImage: `url(${require("@/assets/banner_1.png")})`,
+        backgroundImage: `url(${require("@/assets/banner.jpg")})`,
       },
     };
   },

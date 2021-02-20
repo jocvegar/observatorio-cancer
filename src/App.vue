@@ -2,7 +2,9 @@
   <div id="app">
     <top-header />
     <div class="wrapper">
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </div>
     <Footer />
   </div>
@@ -33,5 +35,14 @@ export default {
 }
 .wrapper {
   min-height: 80vh;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
