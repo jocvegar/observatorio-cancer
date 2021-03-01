@@ -8,7 +8,7 @@
               <div class="text-center mb-10">
                 <router-link to="/">
                   <img
-                    src="@/assets/logo.jpg"
+                    src="@/assets/logo_observatorio.jpg"
                     alt="logo"
                     style="height: 8rem;"
                   />

@@ -21,6 +21,7 @@ export default {
     Footer,
   },
   created() {
+    document.title = "Observatorio de Cáncer";
     AOS.init({ once: true });
   },
 };

@@ -75,6 +75,7 @@ const routes = [
     name: "Mensaje",
     component: () => import("../views/Mensaje.vue"),
   },
+  { path: "*", component: Home },
 ];
 
 const router = new VueRouter({
