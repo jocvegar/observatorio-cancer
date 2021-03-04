@@ -34,9 +34,7 @@ export default {
       .then((response) => {
         console.log("data", (this.data = response.data.data));
       })
-      .catch((error) => {
-        console.log(error);
-      });
+      .catch((error) => console.log(error));
   },
 };
 </script>

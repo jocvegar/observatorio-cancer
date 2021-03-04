@@ -42,11 +42,12 @@
                   <b-col cols="12" md="6">
                     <div class="text-center" data-aos="fade-left">
                       <b-img
+                        thumbnail
                         :src="require('@/assets/mision.jpg')"
                         fluid
                         rounded
                         alt="mision"
-                        style="max-height: 20em;width: auto;"
+                        style="max-height: 24em;width: auto;"
                       ></b-img>
                     </div>
                   </b-col>
@@ -64,11 +65,12 @@
                   <b-col cols="12" md="6" order="2" order-md="1">
                     <div class="text-center" data-aos="fade-right">
                       <b-img
+                        thumbnail
                         :src="require('@/assets/vision.jpg')"
                         fluid
                         rounded
                         alt="mision"
-                        style="max-height: 20em;width: auto;"
+                        style="max-height: 24em;width: auto;"
                       ></b-img>
                     </div>
                   </b-col>

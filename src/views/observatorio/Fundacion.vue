@@ -23,22 +23,39 @@
                   padecen algún tipo de cáncer y que en su mayoría provienen de
                   familias de escasos recursos económicos.
                 </p>
-                <p
-                  data-aos="fade-down"
-                  data-aos-delay="300"
-                  class="my-5 text-center text-md-left"
-                >
-                  Creada en 1982 por un grupo de Damas Voluntarias, con el fin
-                  de servir de apoyo y sostén a los niños en edades de cero a 18
-                  años que padecen esta enfermedad y que son atendidos en la
-                  Salas de Hemato Oncología Pediátrica de los Hospitales Escuela
-                  en Tegucigalpa, Hospital Mario Catarino Rivas en San Pedro
-                  Sula, Unidad de Oncología Pediátrica en el Hospital General
-                  Atlántida de La Ceiba así como en las Clínicas de
-                  Quimioterapia Ambulatoria ubicadas en los hospitales: Roberto
-                  Suazo Córdova en La Paz, Regional del Sur en Choluteca,
-                  Gabriela Alvarado en Danlí y San Francisco en Juticalpa.
-                </p>
+                <b-row align-v="center" align-h="center">
+                  <b-col cols="12" md="8" order="2" order-md="1">
+                    <p
+                      data-aos="fade-down"
+                      data-aos-delay="300"
+                      class="my-5 text-center text-md-left"
+                    >
+                      Creada en 1982 por un grupo de Damas Voluntarias, con el
+                      fin de servir de apoyo y sostén a los niños en edades de
+                      cero a 18 años que padecen esta enfermedad y que son
+                      atendidos en la Salas de Hemato Oncología Pediátrica de
+                      los Hospitales Escuela en Tegucigalpa, Hospital Mario
+                      Catarino Rivas en San Pedro Sula, Unidad de Oncología
+                      Pediátrica en el Hospital General Atlántida de La Ceiba
+                      así como en las Clínicas de Quimioterapia Ambulatoria
+                      ubicadas en los hospitales: Roberto Suazo Córdova en La
+                      Paz, Regional del Sur en Choluteca, Gabriela Alvarado en
+                      Danlí y San Francisco en Juticalpa.
+                    </p>
+                  </b-col>
+                  <b-col cols="12" md="4" order="1" order-md="2">
+                    <div class="text-center pt-10" data-aos="fade-left">
+                      <b-img
+                        thumbnail
+                        rounded
+                        fluid
+                        :src="require('@/assets/fundacion.jpg')"
+                        alt="acerca"
+                        style="max-height: 24em;width: auto;"
+                      ></b-img>
+                    </div>
+                  </b-col>
+                </b-row>
                 <p
                   data-aos="fade-down"
                   data-aos-delay="300"
@@ -64,7 +81,7 @@
                   <a
                     href="https://www.salvamivida.org"
                     target="_blank"
-                    class="badge badge-danger text-center"
+                    class="badge badge-danger text-center px-2 py-1"
                     >salvamivida.org
                   </a>
                 </p>

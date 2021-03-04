@@ -9,7 +9,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-10 col-lg-11 mx-auto">
-            <div class="general-content  mb-55">
+            <div class="general-content mb-55">
               <div class="section-title mb-30">
                 <h2 class="mb-15 text-center">
                   Modelo de <span class="alejandro">Intervención</span>
@@ -43,6 +43,16 @@
                   último de la intervención: el aumento de la probabilidad de
                   sobrevivencia de los pacientes.
                 </p>
+              </div>
+              <div class="text-center pt-10" data-aos="fade-down">
+                <b-img
+                  thumbnail
+                  rounded
+                  fluid
+                  :src="require('@/assets/modelo.jpg')"
+                  alt="acerca"
+                  style="max-height: 25em;width: auto;"
+                ></b-img>
               </div>
             </div>
           </div>

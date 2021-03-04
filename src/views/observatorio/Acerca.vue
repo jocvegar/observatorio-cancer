@@ -40,56 +40,92 @@
         </div>
         <div class="row">
           <div class="col-xl-10 col-lg-11 mx-auto">
-            <div class="general-content mb-55">
-              <div class="section-title mb-30">
-                <h3 class="mb-15 success text-left">
-                  Objetivo General
-                </h3>
-                <p data-aos="fade-down" class="my-5 text-center text-md-left">
-                  Garantizar un proceso adecuado de gestión de la información y
-                  el conocimiento sobre cáncer infantil para informar la toma de
-                  decisiones y orientar la formulación de políticas públicas que
-                  mejoren la asistencia y calidad de vida de los pacientes
-                  oncológico-pediátricos.
-                </p>
-              </div>
+            <div class="general-content mb-75 mt-75">
+              <b-row align-v="center" align-h="center">
+                <b-col cols="12" md="6">
+                  <div class="section-title mb-30">
+                    <h3 class="mb-15 success text-left">
+                      Objetivo General
+                    </h3>
+                    <p
+                      data-aos="fade-down"
+                      class="my-5 text-center text-md-left"
+                    >
+                      Garantizar un proceso adecuado de gestión de la
+                      información y el conocimiento sobre cáncer infantil para
+                      informar la toma de decisiones y orientar la formulación
+                      de políticas públicas que mejoren la asistencia y calidad
+                      de vida de los pacientes oncológico-pediátricos.
+                    </p>
+                  </div>
+                </b-col>
+                <b-col cols="12" md="6">
+                  <div class="text-center" data-aos="fade-left">
+                    <b-img
+                      thumbnail
+                      rounded
+                      fluid
+                      :src="require('@/assets/acerca_1.jpg')"
+                      alt="acerca"
+                      style="max-height:220em;width: auto;"
+                    ></b-img>
+                  </div>
+                </b-col>
+              </b-row>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xl-10 col-lg-11 mx-auto">
-            <div class="general-content mb-55">
-              <div class="section-title mb-30">
-                <h3 class="mb-15 success text-left">
-                  Objetivos Específicos
-                </h3>
-                <ul class="my-5 pl-3 text-left" style="list-style: disc;">
-                  <li class="my-3" data-aos="fade-down">
-                    Sistematizar e integrar los datos e información sobre cáncer
-                    infantil de las diferentes fuentes y registros.
-                  </li>
-                  <li class="my-3" data-aos="fade-down">
-                    Difundir información sobre cáncer infantil que contribuya a
-                    la mejora de la salud pública de la población.
-                  </li>
-                  <li class="my-3" data-aos="fade-down">
-                    Propiciar el análisis crítico sobre la problemática de
-                    cáncer infantil en Honduras.
-                  </li>
-                  <li class="my-3" data-aos="fade-down">
-                    Promover, coordinar y apoyar proyectos de investigación
-                    científica y social sobre cáncer infantil.
-                  </li>
-                  <li class="my-3" data-aos="fade-down">
-                    Desarrollar iniciativas de innovación que mejoren la
-                    atención al paciente oncológico pediátrico.
-                  </li>
-                  <li class="my-3" data-aos="fade-down">
-                    Brindar seguimiento a la oferta sanitaria en materia de
-                    cáncer infantil.
-                  </li>
-                </ul>
-              </div>
+            <div class="general-content mb-75 mt-75">
+              <b-row align-v="center" align-h="center">
+                <b-col cols="12" md="6" order="2" order-md="1">
+                  <div class="text-center" data-aos="fade-right">
+                    <b-img
+                      thumbnail
+                      rounded
+                      fluid
+                      :src="require('@/assets/acerca_2.jpg')"
+                      alt="acerca"
+                      style="max-height: 25em;width: auto;"
+                    ></b-img>
+                  </div>
+                </b-col>
+                <b-col cols="12" md="6" order="1" order-md="2">
+                  <div class="section-title mb-30">
+                    <h3 class="mb-15 success text-left">
+                      Objetivos Específicos
+                    </h3>
+                    <ul class="my-5 pl-3 text-left" style="list-style: disc;">
+                      <li class="my-3" data-aos="fade-down">
+                        Sistematizar e integrar los datos e información sobre
+                        cáncer infantil de las diferentes fuentes y registros.
+                      </li>
+                      <li class="my-3" data-aos="fade-down">
+                        Difundir información sobre cáncer infantil que
+                        contribuya a la mejora de la salud pública de la
+                        población.
+                      </li>
+                      <li class="my-3" data-aos="fade-down">
+                        Propiciar el análisis crítico sobre la problemática de
+                        cáncer infantil en Honduras.
+                      </li>
+                      <li class="my-3" data-aos="fade-down">
+                        Promover, coordinar y apoyar proyectos de investigación
+                        científica y social sobre cáncer infantil.
+                      </li>
+                      <li class="my-3" data-aos="fade-down">
+                        Desarrollar iniciativas de innovación que mejoren la
+                        atención al paciente oncológico pediátrico.
+                      </li>
+                      <li class="my-3" data-aos="fade-down">
+                        Brindar seguimiento a la oferta sanitaria en materia de
+                        cáncer infantil.
+                      </li>
+                    </ul>
+                  </div>
+                </b-col>
+              </b-row>
             </div>
           </div>
         </div>
