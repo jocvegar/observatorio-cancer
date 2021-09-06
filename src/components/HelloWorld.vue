@@ -25,7 +25,7 @@
                         data-aos-duration="1500"
                         class="text-light text-shadow"
                       >
-                        Observatorio Nacional de Cáncer Infantil
+                        Observatorio Hondureño de Cáncer Infantil
                       </h1>
                     </div>
                   </div>
