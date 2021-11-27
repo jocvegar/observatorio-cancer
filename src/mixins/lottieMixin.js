@@ -1,4 +1,4 @@
-import * as animationData from "@/assets/medical.json";
+import * as animationData from "@/assets/loader.json";
 
 export default {
   data: function() {
